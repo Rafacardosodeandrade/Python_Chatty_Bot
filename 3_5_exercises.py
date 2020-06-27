@@ -52,5 +52,10 @@ print(sum_digit)
 # Hint: Do not forget to consider the flight back
 ####################################################################################
 
-vac_days, food_cost, flight_cost, stay_cost = [abs(int(input())) for i in range(4)]
-print(food_cost * vac_days + 2 * flight_cost + stay_cost * (vac_days - 1))
+day = int(input())
+food = int(input())
+flight = int(input())
+night = int(input())
+print((day * (food + night)) + (2 * flight) - (night))  # 6 nights and 7 days
+
+
