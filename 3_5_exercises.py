@@ -105,3 +105,33 @@ interest_rate = 5
 years = 1
 # change the next line
 income = amount * interest_rate / 100
+###############################################################################
+# Ask the user about parameters of a rectangular parallelepiped
+# (3 integers representing the length, width and height) and
+# print the sum of edge lengths, its total surface area and volume.
+#
+# 
+# 
+# Sum of lengths of all edges:
+# s = 4(a + b + c)s=4(a+b+c)
+#
+# Surface area:
+# S = 2(ab + bc + ac)S=2(ab+bc+ac)
+#
+# Volume:
+# V = abcV=abc
+############################################################################
+# SOLUTION
+
+a = int(input())
+b = int(input())
+c = int(input())
+
+first_ = 4 * (a + b + c)  # put your python code here
+sencond_ = 2 * (a * b + b * c + a * c)
+third_ = a * b * c
+
+print(first_)
+print(sencond_)
+print(third_)
+
