@@ -135,3 +135,24 @@ print(first_)
 print(sencond_)
 print(third_)
 
+#################################################################################
+# A school has decided to create three new math groups and equip three 
+# classrooms for them with new desks. At most two students may sit at any desk.
+# The number of students in each of the three groups is known.
+#  Output the smallest number of desks to be purchased.
+# 
+# Each group will sit in its own classroom.
+#
+# Input data format:
+#
+# The program receives the input of three non-negative integers:
+# the number of students in each of the three classes (the numbers do not exceed 1000).
+################################################################################
+# SOLUTION
+
+from math import ceil
+
+group1 = int(input())
+group2 = int(input())
+group3 = int(input())
+print(ceil(group1 / 2) + ceil(group2 / 2) + ceil(group3 / 2))
